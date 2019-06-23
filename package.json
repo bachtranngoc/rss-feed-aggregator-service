@@ -1,0 +1,21 @@
+{
+  "name": "rss-feed-aggregator-service",
+  "version": "1.0.0",
+  "description": "RESTful service for backend project rss-feed-aggregator-backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bach Tran",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "0.19.0",
+    "body-parser": "1.19.0",
+    "dotenv": "8.0.0",
+    "express": "4.17.1",
+    "mongodb": "3.2.7",
+    "request": "2.88.0",
+    "request-promise-native": "1.0.7"
+  }
+}
