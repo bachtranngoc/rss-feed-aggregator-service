@@ -28,12 +28,10 @@ const setConfigurations = (req, res) => {
         }).then(() => {
             return database.collection('configurations').insertOne(req.body);
         }).then((result) => {
-            console.log('inserted config: ', result.insertedCount);
             res.status(200).send({
                 success: 'successfully set configurations'
             });
         }).catch((error) => {
-            console.log('error: ', JSON.stringify(error));
             res.status(500).send({
                 error: error
             })
